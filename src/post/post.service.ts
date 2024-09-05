@@ -21,7 +21,7 @@ export class PostService {
     return await this.prismaService.post.update({
       where: { id: id },
       data: dto,
-    }); 
+    });
   }
   async delete(id: number) {
     return await this.prismaService.post.delete({

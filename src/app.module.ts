@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { PrismaModule } from './prisma/prisma.module';
 import { PostModule } from './post/post.module';
 
-@Module({ 
+@Module({
   imports: [PrismaModule, PostModule],
   controllers: [AppController],
   providers: [AppService],
